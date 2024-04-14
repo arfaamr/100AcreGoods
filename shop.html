@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>100 Acre Goods | Shop</title>   
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="loadCart()">
+        <header>
+            <img id="headIconImg" src="images/headIcon.png" alt="pooh icon">
+            <img id="navTitle" src="images/titleShop.png" alt="100 Acre Goods">
+            <a class="navLink" href="cart.html" onclick="addToCart()"><img class="navButton" src="images/cart.png"></a>
+            <a class="navLink" href="signout.php" onclick="saveCart()"><img class="navButton" src="images/logout.png"></a>
+        </header>
+
+        <div id="itemContainer">
+            <div class="item shop">
+                <img src="images/1.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(1,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(1,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/2.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(2,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(2,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/3.jpg" alt="clothing">
+                <p>$7.95</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(3,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(3,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/4.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(4,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(4,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/5.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(5,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(5,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/6.jpg" alt="clothing">
+                <p>$7.99</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(6,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(6,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/7.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(7,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(7,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/8.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(8,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(8,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/9.jpg" alt="clothing">
+                <p>$10.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(9,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(9,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/10.jpg" alt="clothing">
+                <p>$11.95</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(10,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(10,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/11.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(11,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(11,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/12.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(12,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(12,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/13.jpg" alt="clothing">
+                <p>$4.99</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(13,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(13,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/14.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(14,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(14,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/15.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(15,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(15,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/16.jpg" alt="clothing">
+                <p>$8.99</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(16,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(16,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/17.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(17,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(17,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/18.jpg" alt="clothing">
+                <p>$10.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(18,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(18,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/19.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(19,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(19,1)">+</button> </div>
+            </div>
+            <div class="item shop">
+                <img src="images/20.jpg" alt="clothing">
+                <p>$5.00</p>
+                <div class="addCart"> <p>Add to Cart:</p> <button onclick="addToCurr(20,-1)">-</button> <p class="adding">0</p> <button onclick="addToCurr(20,1)">+</button> </div>
+            </div>
+        
+        </div>
+        
+
+        <footer>
+            <img id="hiddenFormat" src="images/footIcon.png" alt="formatting">
+            <p>Arfaa Rashid - COMP 3340</p>
+            <img id="footIconImg" src="images/footIcon.png" alt="pooh icon">
+        </footer>
+    </body>
+
+</html>

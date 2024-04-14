@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>  
+        <title>100 Acre Goods | Sign In</title>   
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="errorCheck()" >
+        <header>
+            <img id="headIconImg" src="images/headIcon.png" alt="pooh icon">
+            <img id="navTitle" src="images/titleHome.png" alt="100 Acre Goods">
+            <div id="errorBox">
+                <p id="errorMsg"></p>
+            </div>
+        </header>
+
+        <div id="coverContainer">
+            <img id="titlePage" src="images/titlepage.png" alt="100 Acre Goods">
+            <section id="form">
+                <div id="buttonContainer">
+                    <button class="signButton" id="signUpTab" type="button" onclick="displayFormTabContent('signup')">Sign Up</button>
+                    <button class="signButton inactive" id="signInTab" type="button" onclick="displayFormTabContent('signin')">Sign In</button>
+                </div>
+                <form id="signUpForm" method="post" action="signup.php">   <!-- ! set up php to get input and go to next page-->
+                    <fieldset>
+                    <p>
+                        <label>First Name:</label>
+                        <input type="text" name="fname" />
+                    </p>
+                    <p>
+                        <label>Last Name:</label>
+                        <input type="text" name="lname" />
+                    </p>
+                    <p>
+                        <label>Phone Number:</label>
+                        <input type="tel" maxlength=10 name="pnumber" />
+                    </p>
+                    <p>
+                        <label>Email Address:</label>
+                        <input type="email" name="email" />
+                    </p>
+                    <p>
+                        <label>Password:</label>                     <!-- !encrypt -->
+                        <input type="password" name="password" />
+                    </p>
+        
+                    <input class="submit" type="submit" name="submit"/>
+                    </fieldset> 
+                </form>
+                <form id="signInForm" method="post" action="signin.php">
+                    <fieldset>
+                    <p>
+                        <label>Email Address:</label>
+                        <input type="email" name="email" />
+                    </p>
+                    <p>
+                        <label>Password:</label>                     <!-- !encrypt -->
+                        <input type="password" name="password" />
+                    </p>
+        
+                    <input class="submit" type="submit" name="submit"/>
+                    </fieldset> 
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <img id="hiddenFormat" src="images/footIcon.png" alt="formatting">
+            <p>Arfaa Rashid - COMP 3340</p>
+            <img id="footIconImg" src="images/footIcon.png" alt="pooh icon">
+        </footer>
+    </body>
+
+
+</html>
