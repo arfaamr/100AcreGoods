@@ -1,1 +1,1 @@
-[100 Acre Goods](rashid63.myweb.cs.uwindsor.ca)
+[100 Acre Goods](https://rashid63.myweb.cs.uwindsor.ca/)
